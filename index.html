@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Ubuntu:ital,wght@1,300;1,400&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="mylogo.png" alt="Player">MyPlayer</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songlist"></div>
+        <h1>Favourite Songs- no copyright sounds</h1>
+        <div class="songitemcontainer">
+
+            <div class="songitem">
+                <img alt="1">
+                <span class="songname">Let me Love You</span>
+                <span class="songlistplay"><span class="timespan">05:34<i class="fa-regular fa-circle-play fa-xl songitemplay" id="0" style="color: #0c0d0f;"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img alt="1">
+                <span class="songname">Let me Love You</span>
+                <span class="songlistplay"><span class="timespan">05:34<i class="fa-regular fa-circle-play fa-xl songitemplay" id="1" style="color: #0c0d0f;"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img alt="1">
+                <span class="songname">Let me Love You</span>
+                <span class="songlistplay"><span class="timespan">05:34<i class="fa-regular fa-circle-play fa-xl songitemplay" id="2" style="color: #0c0d0f;"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img alt="1">
+                <span class="songname">Let me Love You</span>
+                <span class="songlistplay"><span class="timespan">05:34<i class="fa-regular fa-circle-play fa-xl songitemplay" id="3" style="color: #0c0d0f;"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img alt="1">
+                <span class="songname">Let me Love You</span>
+                <span class="songlistplay"><span class="timespan">05:34<i class="fa-regular fa-circle-play fa-xl songitemplay" id="4" style="color: #0c0d0f;"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img alt="1">
+                <span class="songname">Let me Love You</span>
+                <span class="songlistplay"><span class="timespan">05:34<i class="fa-regular fa-circle-play fa-xl songitemplay" id="5" style="color: #0c0d0f;"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img alt="1">
+                <span class="songname">Let me Love You</span>
+                <span class="songlistplay"><span class="timespan">05:34<i class="fa-regular fa-circle-play fa-xl songitemplay" id="6" style="color: #0c0d0f;"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img alt="1">
+                <span class="songname">Let me Love You</span>
+                <span class="songlistplay"><span class="timespan">05:34<i class="fa-regular fa-circle-play fa-xl songitemplay" id="7" style="color: #0c0d0f;"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img alt="1">
+                <span class="songname">Let me Love You</span>
+                <span class="songlistplay"><span class="timespan">05:34<i class="fa-regular fa-circle-play fa-xl songitemplay" id="8" style="color: #0c0d0f;"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img alt="1">
+                <span class="songname">Let me Love You</span>
+                <span class="songlistplay"><span class="timespan">05:34<i class="fa-regular fa-circle-play fa-xl songitemplay" id="9" style="color: #0c0d0f;"></i></span></span>
+            </div>
+        </div>
+        </div>
+        <div class="songbanner"></div>
+    </div>
+    
+        
+        <div class="bottom">
+            <input type="range" name="range" id="myProgressBar" min="0" max="100">
+            <div class="icons">
+                <i class="fa-solid fa-backward-step fa-2xl" id="previous" style="color: #e9eef7;"></i>
+                <i class="fa-regular fa-circle-play fa-2xl" id="masterplay" style="color: #e9eef7;"></i>
+                <i class="fa-solid fa-forward-step fa-2xl" id="next" style="color: #e9eef7;"></i>
+            </div>
+            <div class="songinfo">
+                <img src="playing.gif" width="42px" alt="" id="gif"><span id="msongname">Stand By You</span>
+            </div>
+        </div>
+    
+        <script src="https://kit.fontawesome.com/68ce72f9fc.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -17,8 +17,7 @@ nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
-    height: 65px;
-    width: 100%;
+    height: 65px; 
     background-color: black;
     color: white;
 
@@ -48,7 +47,7 @@ nav ul li {
     color: white;
     font-family: 'Dosis', sans-serif;
     display: flex;
-    flex-direction: column;
+    
     margin: 23px auto;
     width: 70%;
     border-radius: 12px;
@@ -57,6 +56,7 @@ nav ul li {
     background-size: cover;
     background-position: center;
 }
+
 .songitemcontainer{
     margin-top: 30px;
     /* background-color: #fed9ff; */
@@ -84,7 +84,6 @@ nav ul li {
     color: black;
     margin: 12px 0;
     justify-content: space-between;
-    /* flex-direction: column; */
     align-items: center;
     border-radius: 34px;
     font-family: 'Raleway', sans-serif;
@@ -143,3 +142,4 @@ nav ul li {
     opacity: 0;
     transition: opacity 0.5s ease-in;
 }
+

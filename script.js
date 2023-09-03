@@ -15,7 +15,7 @@ let songs=[
     {songName: "Calm Down", filePath:"songs/5.mp3", coverPath: "covers/5.jpg"},
     {songName: "Bones", filePath:"songs/6.mp3", coverPath: "covers/6.jpg"},
     {songName: "Rabba Meher Kari", filePath:"songs/7.mp3", coverPath: "covers/7.jpg"},
-    {songName: "Aaloo Chatt", filePath:"songs/8.mp3", coverPath: "covers/8.jpg"},
+    {songName: "Night Changes", filePath:"songs/8.mp3", coverPath: "covers/8.jpg"},
     {songName: "Dance the night", filePath:"songs/9.mp3", coverPath: "covers/9.jpg"},
     {songName: "Tu Hai", filePath:"songs/10.mp3", coverPath: "covers/10.jpg"},
 ];
@@ -88,10 +88,13 @@ document.getElementById('previous').addEventListener('click', ()=>{
     else{
         songindex=songindex-1;
     }
+    makeAllPlays();
     audioElement.src= `songs/${songindex+1}.mp3`;
     audioElement.currentTime=0;
     mastersongname.innerText=songs[songindex].songName;
     audioElement.play();
+    document.getElementById(`${songindex}`).classList.remove('fa-circle-play');
+    document.getElementById(`${songindex}`).classList.add('fa-circle-pause');
     masterplay.classList.remove('fa-circle-play');
     masterplay.classList.add('fa-circle-pause');
 })
@@ -103,10 +106,26 @@ document.getElementById('next').addEventListener('click', ()=>{
     else{
         songindex=songindex+1;
     }
+    makeAllPlays();
     audioElement.src= `songs/${songindex+1}.mp3`;
     audioElement.currentTime=0;
     mastersongname.innerText=songs[songindex].songName;
     audioElement.play();
+    document.getElementById(`${songindex}`).classList.remove('fa-circle-play');
+    document.getElementById(`${songindex}`).classList.add('fa-circle-pause');
     masterplay.classList.remove('fa-circle-play');
     masterplay.classList.add('fa-circle-pause');
 })
+
+document.addEventListener("keydown", function(e){
+    if(e.key==" "){
+        masterplay.click();
+    }
+    if(e.key=="ArrowRight"){
+        document.getElementById('next').click();
+    }
+    if(e.key=="ArrowLeft"){
+        document.getElementById('previous').click();    
+    }
+})
+
